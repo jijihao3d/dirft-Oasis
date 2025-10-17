@@ -7,7 +7,7 @@ body {
 }
 
 .logopng {
-    height: 20px;
+    height: 40px;
 }
 
 .section {
@@ -33,6 +33,7 @@ body {
 
 /* 導覽欄區 */
 .heder {
+    height: 50px;
     color: #ffffff;
     background-color: #000000;
     font-size: 1.25rem;
@@ -58,8 +59,9 @@ body {
     color: white;
     background-color: #F45D1C;
     font-size: 1.25rem;
-    padding: 10px;
+    padding: 10px 40px 10px 40px;
 }
+
 /* 導覽欄區end */
 
 .headLogo {
@@ -69,27 +71,30 @@ body {
     padding-left: 50px;
 
 }
-.headContent{
+
+.headContent {
     font-size: 32px;
     margin: 8px 0 8px 0;
 }
-.btn1{
-    color:#ffffff;
+
+.btn1 {
+    color: #ffffff;
     font-size: 24px;
-    padding:8px 24px 8px 24px;
-    border-radius:16px;
+    padding: 8px 24px 8px 24px;
+    border-radius: 16px;
     margin-left: 50px;
     background-color: #F45D1C;
 }
-.btn2{
+
+.btn2 {
     color: #ffffff;
     font-size: 24px;
-    padding:8px 24px 8px 24px;
-    border-radius:16px;
+    padding: 8px 24px 8px 24px;
+    border-radius: 16px;
     margin-left: 10px;
     background-color: #ffffff48;
     border-color: #F45D1C;
-    border: 12px;
+    border-width: 2px;
 
 }
 
@@ -131,3 +136,8 @@ body {
 .bPic-hover {}
 
 /* time table區 */
+.tableFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
