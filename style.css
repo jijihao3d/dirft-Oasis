@@ -18,7 +18,7 @@ body {
     left: 0%;
     width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 5rem;
     position: fixed;
     align-items: center;
@@ -40,9 +40,9 @@ body {
 
 .headLogo {
     font-size: xx-large;
-    color:#ffffff;
-    left:120%;
-    top:80%
+    color: #ffffff;
+    left: 120%;
+    top: 80%
 }
 
 .section {
@@ -57,9 +57,48 @@ body {
     background-image: url(img/page1.jpg);
 }
 
-#timeTable{
+#timeTable {
     background-image: url(img/page-desktop\ 1.png);
 }
-#price{
+
+#price {
     background-image: url(img/page-desktop\ 1.png);
 }
+
+/* lineUp區 */
+@keyframes scroll-rtl {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-ltr {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.runFrame {
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.runContainer {
+    display: flex;
+     width: fit-content;
+     white-space: nowrap;
+}
+
+.bandPic {}
+
+.bPic-hover {}
+
+/* time table區 */
