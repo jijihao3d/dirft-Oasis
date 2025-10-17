@@ -1,6 +1,7 @@
 body {
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #000000;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -9,6 +10,28 @@ body {
     height: 20px;
 }
 
+.section {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#index {
+    background-image: url(img/page1.jpg);
+    height: 860px;
+}
+
+#timeTable {
+    background-image: url(img/page-desktop\ 1.png);
+}
+
+#price {
+    background-image: url(img/page-desktop\ 1.png);
+}
+
+/* 導覽欄區 */
 .heder {
     color: #ffffff;
     background-color: #000000;
@@ -37,33 +60,39 @@ body {
     font-size: 1.25rem;
     padding: 10px;
 }
+/* 導覽欄區end */
 
 .headLogo {
-    font-size: xx-large;
+    font-size: 60px;
     color: #ffffff;
-    left: 120%;
-    top: 80%
-}
-
-.section {
-    min-height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    padding-top: 650px;
+    padding-left: 50px;
 
 }
+.headContent{
+    font-size: 32px;
+    margin: 8px 0 8px 0;
+}
+.btn1{
+    color:#ffffff;
+    font-size: 24px;
+    padding:8px 24px 8px 24px;
+    border-radius:16px;
+    margin-left: 50px;
+    background-color: #F45D1C;
+}
+.btn2{
+    color: #ffffff;
+    font-size: 24px;
+    padding:8px 24px 8px 24px;
+    border-radius:16px;
+    margin-left: 10px;
+    background-color: #ffffff48;
+    border-color: #F45D1C;
+    border: 12px;
 
-#index {
-    background-image: url(img/page1.jpg);
 }
 
-#timeTable {
-    background-image: url(img/page-desktop\ 1.png);
-}
-
-#price {
-    background-image: url(img/page-desktop\ 1.png);
-}
 
 /* lineUp區 */
 @keyframes scroll-rtl {
@@ -93,8 +122,8 @@ body {
 
 .runContainer {
     display: flex;
-     width: fit-content;
-     white-space: nowrap;
+    width: fit-content;
+    white-space: nowrap;
 }
 
 .bandPic {}
