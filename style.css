@@ -69,15 +69,15 @@ body {
 /* 導覽欄區end */
 
 .headLogo {
-    font-size: 60px;
+    font-size: 132px;
     color: #ffffff;
-    padding-top: 650px;
-    padding-left: 50px;
+    padding-top: 475px;
+    padding-left: 70px;
 
 }
 
 .headContent {
-    font-size: 32px;
+    font-size: 37px;
     margin: 8px 0 8px 0;
 }
 
@@ -86,7 +86,7 @@ body {
     font-size: 24px;
     padding: 8px 24px 8px 24px;
     border-radius: 16px;
-    margin-left: 50px;
+    margin-left: 70px;
     background-color: #F45D1C;
 }
 
@@ -96,7 +96,7 @@ body {
     padding: 8px 24px 8px 24px;
     border-radius: 16px;
     margin-left: 10px;
-    background-color: #ffffff48;
+    background-color: #ffffff35;
     border-color: #F45D1C;
     border-width: 2px;
 
@@ -138,17 +138,27 @@ body {
 .runR {
     animation: scroll-rtl 40s linear infinite;
     display: flex;
+    margin: 8px 0px 8px 0px;
 }
 
 .runL {
     animation: scroll-ltr 40s linear infinite;
     display: flex;
+    margin-bottom: 8px;
+}
+
+.runR:hover{
+    animation-play-state: paused;
+}
+
+.runL:hover{
+    animation-play-state: paused;
 }
 
 .bandPic {
     width: 300px;
     height: 300px;
-    padding: 8px 4px 8px 4px;
+    padding: 0px 4px 0px 4px;
     flex-shrink: 0;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
