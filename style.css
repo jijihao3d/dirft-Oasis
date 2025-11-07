@@ -217,19 +217,21 @@ body {
 
 .cost {
     font-size: 40px;
+    padding: 4px;
 }
 
 .type {
     font-size: 24px;
+    padding: 4px;
 }
 
-.price{
+.price {
     background-color: #ffffff61;
     border-radius: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 4px;
 }
 
 .priceContainer {
@@ -239,4 +241,10 @@ body {
     padding: 12px;
 }
 
-.
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff61;
+    border-radius: 75px;
+}
