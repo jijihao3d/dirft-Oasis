@@ -20,13 +20,13 @@ body {
 
 #index {
     background-image: url(img/page1.jpg);
-    height: 860px;
+    height: 960px;
     position: relative;
 }
 
 #timeTable {
     background-image: url(img/page-bottom.jpg);
-    max-width: 1200px;
+    max-width: 1920px;
     position: relative;
 }
 
@@ -109,10 +109,10 @@ body {
 }
 
 .wave {
-    max-width: 1200px;
+    max-width: 1920px;
     overflow: hidden;
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
 }
 
 
@@ -138,7 +138,7 @@ body {
 }
 
 .runFrame {
-    max-width: 1200px;
+    max-width: 1920px;
     overflow: hidden;
 }
 
@@ -191,12 +191,12 @@ body {
 /* time table區 */
 
 .waveR {
-    max-width: 1200px;
+    max-width: 1920px;
     overflow: hidden;
     position: absolute;
-    top: 0px;
+    top: -1px;
     transform: scaleY(-1);
-    
+
 }
 
 .tableFrame {
@@ -210,18 +210,33 @@ body {
     padding: 80px 10px 80px 10px;
 
 }
-.tablesolo{
-    margin:30px
+
+.tablesolo {
+    margin: 30px
+}
+
+.cost {
+    font-size: 40px;
+}
+
+.type {
+    font-size: 24px;
 }
 
 .price{
     background-color: #ffffff61;
     border-radius: 75px;
-}
-
-.priceContainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 12px;
 }
 
+.priceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.
