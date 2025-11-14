@@ -12,14 +12,23 @@ body {
 
 .section {
     min-height: 100%;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    overflow: hidden;
     background-position: center center;
     background-size: cover;
 
+
+}
+
+.main {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #index {
     background-image: url(img/page1.jpg);
+    background-repeat: no-repeat;
     height: 960px;
     position: relative;
 }
@@ -54,7 +63,7 @@ body {
 .hederul {
     align-items: center;
     display: flex;
-    gap: 120px;
+    gap: 7.5rem;
     list-style: none;
 }
 
@@ -257,9 +266,9 @@ body {
     padding: 36px;
 }
 
-.map-text{
+.map-text {
     font-size: 24px;
-    padding:0px 0px 16px 12px;
+    padding: 0px 0px 16px 12px;
 }
 
 .map {
@@ -269,7 +278,7 @@ body {
     height: 300px;
 }
 
-.notice{
+.notice {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -277,15 +286,19 @@ body {
     padding: 32px;
 }
 
-.notice-title{
+.notice-title {
     font-size: 20px;
 }
 
-.notice-content{
+.notice-content {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 4px;
     font-size: 12px;
+}
+
+.notice-content p {
+    line-height: 1.6;
 }
