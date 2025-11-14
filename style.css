@@ -272,6 +272,9 @@ body {
 .notice{
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
 }
 
 .notice-title{
@@ -279,6 +282,10 @@ body {
 }
 
 .notice-content{
-    pad: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
     font-size: 12px;
 }
