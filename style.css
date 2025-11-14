@@ -12,7 +12,7 @@ body {
 
 .section {
     min-height: 100%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center center;
     background-size: cover;
 
@@ -215,6 +215,8 @@ body {
     margin: 30px
 }
 
+/*----------price-------------*/
+
 .cost {
     font-size: 40px;
     padding: 4px;
@@ -222,29 +224,61 @@ body {
 
 .type {
     font-size: 24px;
-    padding: 4px;
+    margin: 24px 0px 0px 0px;
 }
 
 .price {
     background-color: #ffffff61;
     border-radius: 75px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4px;
+    padding: 32px;
 }
 
 .priceContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    gap: 32px;
 }
 
-.map {
-    display: flex;
+.type-margin {
+    margin: 32px;
+}
+
+/*-----------map-----------*/
+
+.map-container {
+
     justify-content: center;
     align-items: center;
     background-color: #ffffff61;
-    border-radius: 75px;
+    border-radius: 76px;
+    padding: 36px;
+}
+
+.map-text{
+    font-size: 24px;
+    padding:0px 0px 16px 12px;
+}
+
+.map {
+    border-radius: 40px;
+    overflow: hidden;
+    width: 450px;
+    height: 300px;
+}
+
+.notice{
+    justify-content: center;
+    align-items: center;
+}
+
+.notice-title{
+    font-size: 20px;
+}
+
+.notice-content{
+    pad: 4px;
+    font-size: 12px;
 }
