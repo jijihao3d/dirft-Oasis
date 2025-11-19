@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%; 
+}
+
 body {
     font-family: 'Inter', 'Noto Sans TC', 'sans-serif';
     background-color: #000000;
@@ -16,13 +20,12 @@ body {
     overflow: hidden;
     background-position: center center;
     background-size: cover;
-
+    
 
 }
-
-.main {
-    max-width: 1920px;
-    margin: 0 auto;
+.main{
+max-width: 1920px; 
+    margin: 0 auto; 
     width: 100%;
 }
 
@@ -47,14 +50,14 @@ body {
 .heder {
     height: 50px;
     background-color: #000000;
-    font-size: 1.25rem;
-    padding: 0 1.5rem;
+    font-size: 2rem;
+    padding: 0 2.2rem;
     top: 0%;
     left: 0%;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 8rem;
     position: fixed;
 
     z-index: 1000;
@@ -63,7 +66,7 @@ body {
 .hederul {
     align-items: center;
     display: flex;
-    gap: 7.5rem;
+    gap: 12rem;
     list-style: none;
 }
 
@@ -75,32 +78,32 @@ body {
 .hebtn {
     color: white;
     background-color: #F45D1C;
-    font-size: 20px;
-    padding: 10px 50px 10.5px 50px;
+    font-size: 2rem;
+    padding: 1rem 5rem 1.05rem 5rem;
 }
 
 /* 導覽欄區end */
 
 .headLogo {
-    font-size: 132px;
+    font-size: 13.2rem;
     color: #ffffff;
-    padding-top: 475px;
-    padding-left: 70px;
+    padding-top: 47.5rem;
+    padding-left: 7rem;
 
 }
 
 .headContent {
-    font-size: 37px;
-    margin: 12px 0 12px 0;
+    font-size: 3.7rem;
+    margin: 1.2rem 0 1.2rem 0;
 }
 
 .btn1 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 300;
-    padding: 8px 24px 8px 24px;
+    padding: 0.8rem 2.4rem 0.8rem 2.4rem;
     border-radius: 16px;
-    margin-left: 70px;
+    margin-left: 7rem;
     background-color: #F45D1C;
 }
 
@@ -266,9 +269,9 @@ body {
     padding: 36px;
 }
 
-.map-text {
+.map-text{
     font-size: 24px;
-    padding: 0px 0px 16px 12px;
+    padding:0px 0px 16px 12px;
 }
 
 .map {
@@ -278,7 +281,7 @@ body {
     height: 300px;
 }
 
-.notice {
+.notice{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -286,11 +289,11 @@ body {
     padding: 32px;
 }
 
-.notice-title {
+.notice-title{
     font-size: 20px;
 }
 
-.notice-content {
+.notice-content{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -299,6 +302,6 @@ body {
     font-size: 12px;
 }
 
-.notice-content p {
+.notice-content p{
     line-height: 1.6;
 }
