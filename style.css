@@ -32,7 +32,7 @@ max-width: 1920px;
 #index {
     background-image: url(img/page1.jpg);
     background-repeat: no-repeat;
-    height: 960px;
+    height: 1080px;
     position: relative;
 }
 
@@ -87,8 +87,8 @@ max-width: 1920px;
 .headLogo {
     font-size: 13.2rem;
     color: #ffffff;
-    padding-top: 47.5rem;
-    padding-left: 7rem;
+    padding-top: 64rem;
+    padding-left: 12rem;
 
 }
 
@@ -103,7 +103,7 @@ max-width: 1920px;
     font-weight: 300;
     padding: 0.8rem 2.4rem 0.8rem 2.4rem;
     border-radius: 16px;
-    margin-left: 7rem;
+    margin-left: 12rem;
     background-color: #F45D1C;
 }
 
@@ -224,14 +224,14 @@ max-width: 1920px;
 }
 
 .tablesolo {
-    margin: 30px
+    margin: 3rem;
 }
 
 /*----------price-------------*/
 
 .cost {
     font-size: 40px;
-    padding: 4px;
+    padding: 0.4rem;
 }
 
 .type {
@@ -244,18 +244,19 @@ max-width: 1920px;
     border-radius: 75px;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    padding: 3.2rem;
+    margin:3.2rem;
 }
 
 .priceContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    /* gap: 3.2rem; */
 }
 
 .type-margin {
-    margin: 32px;
+    margin: 3.2rem;
 }
 
 /*-----------map-----------*/
@@ -266,11 +267,11 @@ max-width: 1920px;
     align-items: center;
     background-color: #ffffff61;
     border-radius: 76px;
-    padding: 36px;
+    padding: 3.6rem;
 }
 
 .map-text{
-    font-size: 24px;
+    font-size: 2.4rem;
     padding:0px 0px 16px 12px;
 }
 
@@ -286,7 +287,7 @@ max-width: 1920px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 32px;
+    padding: 3.2rem;
 }
 
 .notice-title{
