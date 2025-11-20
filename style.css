@@ -109,11 +109,11 @@ max-width: 1920px;
 
 .btn2 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 300;
-    padding: 8px 24px 8px 24px;
+    padding: 0.8rem 2.4rem 0.8rem 2.4rem;
     border-radius: 16px;
-    margin-left: 10px;
+    margin-left: 1rem;
     background-color: #ffffff35;
     border-color: #F45D1C;
     border-width: 2px;
@@ -163,13 +163,13 @@ max-width: 1920px;
 .runR {
     animation: scroll-rtl 40s linear infinite;
     display: flex;
-    margin: 8px 0px 8px 0px;
+    margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
 .runL {
     animation: scroll-ltr 40s linear infinite;
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
 }
 
 .runR:hover {
@@ -183,7 +183,7 @@ max-width: 1920px;
 .bandPic {
     width: 300px;
     height: 300px;
-    padding: 0px 4px 0px 4px;
+    padding: 0rem 0.4rem 0rem 0.4rem;
     flex-shrink: 0;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -219,7 +219,7 @@ max-width: 1920px;
 
 .tablepic {
     width: 500px;
-    padding: 80px 10px 80px 10px;
+    padding: 8rem 1rem 8rem 1rem;
 
 }
 
@@ -230,13 +230,13 @@ max-width: 1920px;
 /*----------price-------------*/
 
 .cost {
-    font-size: 40px;
+    font-size: 4rem;
     padding: 0.4rem;
 }
 
 .type {
-    font-size: 24px;
-    margin: 24px 0px 0px 0px;
+    font-size: 2.4rem;
+    margin: 2.4rem 0rem 0rem 0rem;
 }
 
 .price {
@@ -272,7 +272,7 @@ max-width: 1920px;
 
 .map-text{
     font-size: 2.4rem;
-    padding:0px 0px 16px 12px;
+    padding:0rem 0rem 1.6rem 1.2rem;
 }
 
 .map {
@@ -291,7 +291,7 @@ max-width: 1920px;
 }
 
 .notice-title{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .notice-content{
@@ -299,10 +299,28 @@ max-width: 1920px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 4px;
-    font-size: 12px;
+    padding: 0.4rem;
+    font-size: 1.2rem;
 }
 
 .notice-content p{
     line-height: 1.6;
+}
+/*---RWD---*/
+
+@media (max-width:768px){
+    .priceContainer{flex-direction: column;}
+}
+
+.hambur { display: none; } 
+
+
+@media (max-width: 768px) {
+  .hambur {
+    display:block;
+  }
+}
+
+.bar{
+    display: block;
 }
