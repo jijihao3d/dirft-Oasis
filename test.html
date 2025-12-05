@@ -1,67 +1,165 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>圓角 Google Map 範例</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background-color: #f0f2f5;
-            display: grid;
-            place-items: center;
-            min-height: 100vh;
-        }
-
-        /* * 【關鍵修正】
-         * 1. 建立一個 .map-container 容器
-         */
-        .map-container {
-            /* 2. 設定您想要的圓角大小 */
-            border-radius: 20px;
-            
-            /* 3. 【最重要】將超出圓角範圍的內容 (iframe的直角) 裁切掉 */
-            overflow: hidden;
-            
-            /* 4. 設定容器的寬高 */
-            width: 450px;
-            height: 300px;
-            
-            /* (可選) 加上陰影，讓它看起來更像您截圖中的卡片 */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <title>游離綠洲</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/dmubz986b/image/upload/v1757677442/logo_zeyggy.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <nav class="heder">
+            <a href="#">
+                <img src="img/logo-01.png" class="logopng">
+            </a>
+            <ul class="hederul">
 
-    <h2>圓角地圖效果</h2>
+                <li><a href="#index">NEWS</a></li>
+                <li><a href="#lineUp">LINE UP</a></li>
+                <li><a href="#timeTable">TIME TABLE</a></li>
+                <li><a href="#price">MAP</a></li>
+                <li><a href="#price">TICKET</a></li>
+            </ul>
 
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703554125866!2d121.5623348753232!3d25.04412927781216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab9e36500001%3A0x12b050d0251a5054!2zMTAxIOiLseiusQ!5e0!3m2!1szh-TW!2stw!4v1731582235881!5m2!1szh-TW!2stw"
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+            <button class="hambur">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="index">
+            <div class="headLogo">
+                游離綠洲
+                <div class="headContent">意識憑聲音出走 靈魂在遠方生長</div>
+            </div>
+            <button class="btn1">立即訂票</button>
+            <button class="btn2">了解更多</button>
+            <div class="wave">
+                <img src="img/gradient.png">
+            </div>
 
+        </section>
+
+        <section id="lineUp">
+            <div class="runFrame">
+                <div class="runContainer">
+                    <div class="runR">
+                        <div class="bandPic"><img src="img/artist-9 1.png"></div>
+                        <div class="bandPic"><img src="img/artist-8 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-7 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-6 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-5 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-4 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-9 1.png"></div>
+                        <div class="bandPic"><img src="img/artist-8 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-7 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-6 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-5 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-4 1.jpg"></div>
+                    </div>
+                    <div class="runL">
+                        <div class="bandPic"><img src="img/artist-10 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-12 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-1 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-2 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-3 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-11 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-10 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-12 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-1 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-2 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-3 1.jpg"></div>
+                        <div class="bandPic"><img src="img/artist-11 1.jpg"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="timeTable">
+            <div class="waveR">
+                <img src="img/gradient.png">
+            </div>
+            <div class="tableFrame">
+                <div class="tablesolo">
+                    <img src="img/timeTable-01 1.png" class="tablepic">
+                    <img src="img/timeTable-02 1.png" class="tablepic">
+                </div>
+
+            </div>
+            <div class="priceContainer">
+                <div class="price">
+                    <div class="type-margin">
+                        <span class="type">單日通行票</span>
+                        <p class="cost">$2100</p>
+                    </div>
+                    <div class="type-margin">
+                        <span class="type">雙日通行票</span>
+                        <p class="cost">$3500</p>
+                    </div>
+                    <div class="type-margin">
+                        <span class="type">身障通行票</span>
+                        <p class="cost">$1400</p>
+                    </div>
+
+                </div>
+                <div class="map-container">
+                    <div class="map-text">
+                        <p>陽明山 擎天崗</p>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3611.110217863041!2d121.57084465026853!3d25.16575599823189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5pOO5aSp5bSX!5e0!3m2!1szh-TW!2stw!4v1760695329654!5m2!1szh-TW!2stw" width="450" height="300"
+                            style="border:0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="notice">
+                <p class="notice-title">活動免責聲明</p>
+                <div class="notice-content">
+                    敬請所有活動參與者（以下簡稱「參與者」）在報名或參與本次活動前，詳閱並理解本聲明之所有內容。當您報名或實際參與本次活動時，即視為您已同意以下所有條款：
+                    <P>．本次活動為自發性、非營利性質之活動。所有參與者均為自願參加，並應充分理解活動可能存在之各項風險，包括但不限於：人身傷害、財物損失或損壞等。參與者應自行評估其身體狀況與能力，確認適合參加本次活動。
+                    </P>
+                    <P>．參與者應對自身之人身安全、健康狀況及攜帶之財物負完全責任。活動期間，請務必注意自身安全，並遵守活動主辦方（以下簡稱「主辦方」）之指示與規定。主辦方僅提供活動之場地與安排，不負擔任何形式之安全保證責任。
+                    </P>
+                    <P>．若參與者在活動期間，因任何個人行為、突發疾病、意外事故或不可抗力因素，導致任何人身傷亡或財物損失，主辦方與其所有成員概不負擔任何法律與賠償責任。
+                        ．主辦方保留因天氣、天災、不可預測之突發狀況或其他不可抗力因素，隨時變更、延期或終止本次活動之權利。相關變更將盡速通知所有參與者。</P>
+                    <P>．本次活動期間所拍攝之照片及影片，主辦方有權無償使用於後續之活動宣傳用途。若參與者不同意，請於報名時事先告知。</P>
+                    <P>．若參與者有任何潛在之疾病或特殊身體狀況，應於報名或參與前，事先徵詢醫師之專業意見。</P>
+
+                    本次活動所有參與者，皆應對自身行為負責。一旦報名或參與，即代表您已充分理解並接受本聲明之所有內容。
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const hambur = document.querySelector(".hambur");
+        const navMenu = document.querySelector(".hederul");
+
+        hambur.addEventListener("click", () => {
+            hambur.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+        
+        // 點擊連結後收起選單
+        document.querySelectorAll(".hederul a").forEach(n => n.addEventListener("click", () => {
+            hambur.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
 </body>
+
 </html>
-```eof
-
-### 程式碼說明：
-
-1.  **`
-    .map-container` (CSS)**：我們建立了一個新的 CSS class 叫做 `.map-container`。
-2.  **`
-    border-radius: 20px;`**：這就是設定「圓角」的 CSS 屬性，您可以自由調整 `20px` 這個數值。
-3.  **`
-    overflow: hidden;` (最關鍵)**：`<iframe>` 本身是方形的，這行程式碼的意思是「把 `map-container` 容器**溢出來**的內容（也就是 `<iframe>` 的四個直角）**藏起來**」。
-4.  **`
-    <iframe>` 的修改**：
-    * 我將 `width` 和 `height` 改為 `100%`，讓 `<iframe>` 剛好填滿它外層的 `.map-container` 容器。
-    * 我將您無效的 `style="border:75px"` 改為 `style="border:0;"`，移除了 `<iframe>` 預設的醜醜邊框。
-    * 我換上了一個台北 101 的範例地圖 `src`，讓您可以直接看到效果。

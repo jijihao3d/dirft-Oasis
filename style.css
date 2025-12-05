@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
 body {
@@ -20,12 +20,13 @@ body {
     overflow: hidden;
     background-position: center center;
     background-size: cover;
-    
+
 
 }
-.main{
-max-width: 1920px; 
-    margin: 0 auto; 
+
+.main {
+    max-width: 1920px;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -58,8 +59,9 @@ max-width: 1920px;
     display: flex;
     justify-content: center;
     gap: 8rem;
+    align-items: center;
     position: fixed;
-
+    box-sizing: border-box;
     z-index: 1000;
 }
 
@@ -240,19 +242,24 @@ max-width: 1920px;
 }
 
 .price {
-    background-color: #ffffff61;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
     border-radius: 75px;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 3.2rem;
-    margin:3.2rem;
+    margin: 3.2rem;
 }
 
 .priceContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 3.2rem; */
+    /* align-items: stretch; */
+
 }
 
 .type-margin {
@@ -262,17 +269,17 @@ max-width: 1920px;
 /*-----------map-----------*/
 
 .map-container {
-
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
     justify-content: center;
     align-items: center;
-    background-color: #ffffff61;
     border-radius: 76px;
     padding: 3.6rem;
 }
 
-.map-text{
+.map-text {
     font-size: 2.4rem;
-    padding:0rem 0rem 1.6rem 1.2rem;
+    padding: 0rem 0rem 1.6rem 1.2rem;
 }
 
 .map {
@@ -282,7 +289,7 @@ max-width: 1920px;
     height: 300px;
 }
 
-.notice{
+.notice {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -290,11 +297,11 @@ max-width: 1920px;
     padding: 3.2rem;
 }
 
-.notice-title{
+.notice-title {
     font-size: 2rem;
 }
 
-.notice-content{
+.notice-content {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -303,24 +310,183 @@ max-width: 1920px;
     font-size: 1.2rem;
 }
 
-.notice-content p{
+.notice-content p {
     line-height: 1.6;
 }
-/*---RWD---*/
 
-@media (max-width:768px){
-    .priceContainer{flex-direction: column;}
+/* 預設隱藏漢堡按鈕 (Desktop) */
+.hambur {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
-.hambur { display: none; } 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* -------------------------------------------
+   RWD 
+------------------------------------------- */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 @media (max-width: 768px) {
-  .hambur {
-    display:block;
-  }
-}
 
-.bar{
-    display: block;
+    
+    .heder {
+        justify-content: space-between;
+        
+    }
+
+    .hambur {
+        display: block;
+        
+        z-index: 1001;
+    }
+
+    
+    .hambur.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hambur.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hambur.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hederul {
+        
+        position: fixed;
+        left: -100%;
+        top: 0;
+        gap: 4rem;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        transition: 0.3s;
+        padding-left: 0;
+        
+    }
+
+    .hederul.active {
+        left: 0;
+        /* 滑入 */
+    }
+
+    /* --- 首頁 (#index) 修正 --- */
+    #index {
+        height: auto;
+        /* 不強制固定高度 */
+        min-height: 100vh;
+        background-position: top center;
+    }
+
+    .headLogo {
+        
+        padding-top: 20rem;
+        padding-left: 0;
+        
+        font-size: 8rem;
+    /* 字體縮小 */
+        text-align: center;
+    }
+
+    .headContent {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    /* 按鈕置中與間距調整 */
+    .btn1 {
+        display: block;
+        margin: 2rem auto 1rem auto;
+        /* 移除 left 12rem，改為置中 */
+    }
+
+    .btn2 {
+        display: block;
+        margin: 1rem auto;
+        /* 置中 */
+    }
+
+    .wave {
+        width: 100%;
+    }
+
+    .wave img {
+        width: 100%;
+        /* 波浪圖寬度修正 */
+    }
+
+    /* --- LineUp 跑馬燈修正 --- */
+    .bandPic {
+        width: 300px;
+        /* 手機圖片縮小，原本 300px 太大 */
+        height: 300px;
+    }
+
+    /* --- TimeTable & Layout 修正 --- */
+    .tablesolo {
+        display: flex;
+        flex-direction: column;
+        /* 圖片改為直向排列 */
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .tablepic {
+        width: 100%;
+        /* 寬度隨螢幕縮放 */
+        padding: 2rem 0;
+        /* 減少 padding */
+    }
+
+    /* --- Price & Map 修正 --- */
+    .priceContainer {
+        flex-direction: column;
+        /* 改為直向堆疊 */
+        padding: 0 2rem;
+    }
+
+    .price,
+    .map-container {
+        width: 100%;
+        /* 寬度滿版 */
+        box-sizing: border-box;
+        /* 包含 padding */
+        margin: 1.5rem 0;
+        border-radius: 40px;
+    }
+
+    /* 地圖 iframe 自適應 */
+    .map {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+        /* 保持比例 */
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
